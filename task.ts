@@ -39,6 +39,23 @@ const getAddressCity = (person: Person): string => {
 
 
 
+// Problem-3 ......................................
+class Cat {
+    constructor(public name: string, public color: string, public sound: string) { }
+}
+
+const isCat = (cat: Cat) => {
+    if (cat instanceof Cat) {
+        return console.log('Yes, it is a cat');
+    } else {
+        return console.log('No, it is not a cat');
+    }
+}
+
+
+
+
+
 // Problem-4 ......................................
 type MixedValue = string | number;
 const mixedData: MixedValue[] = [6, 'mango', 2, 8, 'x', 7, 'go', 'think', 3];
