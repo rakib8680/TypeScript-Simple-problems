@@ -129,3 +129,21 @@ const res2 = findFirstOccurrence<string>(strings, targetStr);
 
 console.log('Index of Target Number is: ', res1);
 console.log('Index of Target String is: ', res2);
+
+
+
+
+// Problem-8 ......................................
+interface Product {
+    name: string;
+    price: number;
+    quantity: number;
+};
+
+const totalPrice = (arr: Product[]): number => {
+    let totalCost: number = 0;
+    for (const product of arr) {
+        totalCost += product.price * product.quantity;
+    }
+    return totalCost;
+}
