@@ -99,13 +99,18 @@ const getAllDetails = (car: Car, driver: Driver) => {
 
 // Problem-6 ......................................
 const getSum = (arr: unknown) => {
-    if (Array.isArray(arr)) {
-        if (arr.every(num => typeof num === 'number')) {
-            const sum = arr.reduce((acc, num) => acc + num, 0)
-            console.log(sum)
-        } else {
-            console.log('Please Provide Number Array');
-        }
+    if (Array.isArray(arr) && arr.every(num => typeof num === 'number')) {
+        const sum: number = arr.reduce((acc, num) => acc + num, 0)
+        console.log(sum)
+    } else {
+        console.log('Please Provide Number Array');
+
     }
 
-}
+};
+
+
+
+
+
+// Problem-7 ......................................
