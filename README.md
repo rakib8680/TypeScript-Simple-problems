@@ -21,8 +21,13 @@
 
 
 >### 5.Explain the role of type guards in TypeScript and provide an example of a custom type guard?
-+ Type guards are used to check the type of a variable at development process. They are used to check if a variable is of a specific type or not. If the variable is of the specified type, then the type guard returns true, otherwise it returns false. Example : ```tsx
- isAnimal(animal: any): animal is {name: string}
- ```
++ Type guards are used to check the type of a variable at development process. They are used to check if a variable is of a specific type or not. If the variable is of the specified type, then the type guard returns true, otherwise it returns false. Example : ``` isAnimal(animal: any): animal is {name: string}```
 
+
+>### 6.Can you give an example of how to use "readonly" properties in TypeScript?
++ How to use "readonly" properties in TypeScript : ```readonly name: string;```
+
+
+>### 7.Explain what a union type is in TypeScript and provide an example of its usage?
++ A union type is a type that can be one of several types. Example : ```let unions: string | number | boolean;```
 
