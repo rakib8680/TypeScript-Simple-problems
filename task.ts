@@ -42,7 +42,7 @@ const getAddressCity = (person: Person): string => {
 // Problem-3 ......................................
 class Cat {
     constructor(public name: string, public color: string, public sound: string) { }
-}
+};
 
 const isCat = (cat: Cat) => {
     if (cat instanceof Cat) {
@@ -50,7 +50,7 @@ const isCat = (cat: Cat) => {
     } else {
         return console.log('No, it is not a cat');
     }
-}
+};
 
 
 
@@ -68,5 +68,27 @@ const getTotal = (arr: MixedValue[]): number => {
         }
     })
     return total;
-}
+};
 
+
+
+
+
+
+// Problem-5 ......................................
+interface Car {
+    make: string,
+    model: string,
+    year: number,
+};
+
+interface Driver {
+    name: string,
+    licenseNumber: number,
+};
+
+
+const getAllDetails = (car: Car, driver: Driver) => {
+    const result = { ...car, ...driver };
+    return result;
+};
