@@ -21,6 +21,8 @@
 
 
 >### 5.Explain the role of type guards in TypeScript and provide an example of a custom type guard?
-+ Type guards are used to check the type of a variable at development process. They are used to check if a variable is of a specific type or not. If the variable is of the specified type, then the type guard returns true, otherwise it returns false. Example : ```tsx isAnimal(animal: any): animal is {name: string}```
++ Type guards are used to check the type of a variable at development process. They are used to check if a variable is of a specific type or not. If the variable is of the specified type, then the type guard returns true, otherwise it returns false. Example : ```tsx
+ isAnimal(animal: any): animal is {name: string}
+ ```
 
 
