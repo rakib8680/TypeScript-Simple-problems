@@ -114,3 +114,18 @@ const getSum = (arr: unknown) => {
 
 
 // Problem-7 ......................................
+const findFirstOccurrence = <T>(arr: T[], param: T) => {
+    const result: number = arr.indexOf(param);
+    return result !== -1 ? result : -1;
+};
+
+const numbers: number[] = [6, 3, 8, 2, 9, 1];
+const targetNum = 9;
+const strings: string[] = ["a", "b", "c", "d", "e"];
+const targetStr = "d";
+
+const res1 = findFirstOccurrence<number>(numbers, targetNum);
+const res2 = findFirstOccurrence<string>(strings, targetStr);
+
+console.log('Index of Target Number is: ', res1);
+console.log('Index of Target String is: ', res2);
